@@ -1,1 +1,1 @@
-web: gunicorn wine_project.wsgi
+web: gunicorn wine_api.wsgi
