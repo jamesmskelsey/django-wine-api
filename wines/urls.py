@@ -2,9 +2,9 @@ from django.urls import path
 from rest_framework import urlpatterns
 from . import views
 from .views import WineViewSet
-from rest_framework.routers import SimpleRouter
+from rest_framework.routers import DefaultRouter
 
-router = SimpleRouter()
+router = DefaultRouter()
 router.register(r'', WineViewSet, basename="wines")
 urlpatterns = router.urls
 

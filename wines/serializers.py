@@ -3,8 +3,10 @@ from rest_framework import serializers
 
 
 class WineSerializer(serializers.ModelSerializer):
-    model = Wine
-    fields = ['wine_name', 'price', 'varietal', 'description']
+
+    class Meta:
+        model = Wine
+        fields = ['wine_name', 'price', 'varietal', 'description']
 
 
 # class WineSerializer(object):
